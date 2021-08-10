@@ -5,4 +5,4 @@ app.use(express.json());
 
 app.use(rotas);
 
-app.listen(8002);
+app.listen(8000);
