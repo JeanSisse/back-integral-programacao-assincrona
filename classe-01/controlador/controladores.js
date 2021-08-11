@@ -12,7 +12,6 @@ const buscarPokemons = async (req, res) => {
 const buscarUmPokemon = async (req, res) => {
     const idOuNome = req.params.idOuNome;
     const response = await axios.get(`${url}${idOuNome}/`);
-    console.log(response.data);
     return res.json({
         id: response.data.id,
         name: response.data.name,
